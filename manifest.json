@@ -1,0 +1,24 @@
+{
+  "name": "Myperfectice Automation Tool",
+  "version": "1.0.0",
+  "description": "Automate the process of taking tests on https://lpu.myperfectice.com/",
+  "author": "Saurav Hathi",
+  "manifest_version": 3,
+  "icons": {
+    "16": "./images/icon16.png",
+    "32": "./images/icon32.png",
+    "48": "./images/icon48.png",
+    "128": "./images/icon128.png"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "./popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lpu.myperfectice.com/student/testSeries/home"],
+      "css": ["./popup/popup.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
