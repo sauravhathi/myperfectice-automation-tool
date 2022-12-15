@@ -7,7 +7,7 @@ body {
     color: black;
   }
 
-  nav {
+  .ex-navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     border-radius: 0.5rem;
   }
 
-  nav img {
+  .ex-navbar .ex-icon {
     width: 2rem;
     height: 2rem;
     margin-right: 0.5rem;
@@ -25,7 +25,7 @@ body {
     border-radius: 50%;
   }
 
-  nav span {
+  .ex-navbar span {
     font-size: 1rem;
   }
 
@@ -41,7 +41,7 @@ body {
     padding-right: 20px;
   }
 
-  input {
+  #test_series {
     width: 100%;
     padding: 10px;
     border: none;
@@ -53,16 +53,16 @@ body {
     font-size: 0.8rem;
   }
 
-  input:focus {
+  #test_series:focus {
     outline: 1px solid #4f46e5;
   }
 
-  label {
+  .ex-label {
     font-size: 0.8rem;
     color: #4f46e5;
   }
 
-  button {
+  .ex-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -71,7 +71,7 @@ body {
     cursor: pointer;
   }
 
-  button:hover {
+  .ex-button:hover {
     background-color: black;
   }
 
