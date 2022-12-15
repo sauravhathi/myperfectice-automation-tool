@@ -34,4 +34,4 @@ This is a chrome extension to automate the process of taking tests on https://lp
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/sauravhathi/myperfectice-automation-tool/blob/master/LICENCE)
