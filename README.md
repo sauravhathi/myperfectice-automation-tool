@@ -6,6 +6,14 @@ This is a chrome extension to automate the process of taking tests on https://lp
 
 ![image](https://user-images.githubusercontent.com/61316762/207877863-fbf8f8fb-1ede-45b7-8a61-7ce440fe7c1e.png)
 
+## Hint
+
+#### For First Question
+![Screenshot 2022-12-15 203355](https://user-images.githubusercontent.com/61316762/207896149-cb7a5169-3bc9-44d7-b47c-17fed510a46e.png)
+
+#### For All Questions except 1st Question
+![Screenshot 2022-12-15 203723](https://user-images.githubusercontent.com/61316762/207896335-925daaec-9e4c-4565-ba62-d3cfbe15e871.png)
+
 ## How to use
 
 1. Clone the repo 'git clone https://github.com/sauravhathi/myperfectice-automation-tool.git'
