@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const test_series = document.getElementById("test_series").value;
         chTab("start", test_series);
     });
+    document.getElementById("attemptTest").addEventListener("click", function () {
+        const test_series = document.getElementById("test_series").value;
+        chTab("attemptTest", "");
+    }
+    );
 });
 
 function chTab(msg, test_series_title) {

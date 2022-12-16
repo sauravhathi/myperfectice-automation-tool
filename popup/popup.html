@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="popup.css" />
     <script src="popup.js" type="module"></script>
+    <script src="./inject.js" type="module"></script>
     <title>Myperfectice Automation Tool</title>
+    <style>
+    </style>
   </head>
   <body>
     <nav class="ex-navbar">
-      <img src="../images/icon48.png" alt="icon" class="ex-icon"/>
+      <img src="../images/icon48.png" alt="icon" class="ex-icon" />
       <span>Myperfectice Automation Tool</span>
     </nav>
     <main>
@@ -23,9 +26,13 @@
           value="COGNITE GAME V3"
         />
       </div>
-      <button class="ex-button" id="start">Start</button>
+      <div class="btn-group">
+        <button class="ex-button" id="start">Start</button>
+        <button class="ex-button" id="attemptTest">STQ</button>
+      </div>
     </main>
     <footer>
+      <span>Version 1.0.0</span>
       <span
         >Made by <a href="https://github.com/sauravhathi">@sauravhathi</a></span
       >

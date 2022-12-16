@@ -24,12 +24,14 @@ This is a chrome extension to automate the process of taking tests on https://lp
 6. Click on the extension icon
 7. Enter the test series name
 8. Click on 'Start'
-9. Wait for the test to complete
+9. Wait for the opening of the test page
+10. Click on 'STQ' to start attempting questions
+
+`Note:` If you are getting an error, try reloading the page and then use the extension.
 
 ## How it works
 
-1. It opens the test series page
-2. It opens the resume test page
+1. The extension injects a script into the page to automate the process of taking tests.
 
 ## How to contribute
 

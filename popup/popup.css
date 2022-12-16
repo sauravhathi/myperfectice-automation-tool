@@ -32,13 +32,19 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
     min-height: 150px;
+    margin-bottom: 20px;
   }
 
   .input_group{
     padding-right: 20px;
+  }
+
+  .btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #test_series {
@@ -76,9 +82,9 @@ body {
   }
 
   footer {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
-    text-align: right;
   }
 
   footer a {
@@ -91,7 +97,7 @@ body {
   }
 
   footer span {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   footer span a {

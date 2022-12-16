@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://lpu.myperfectice.com/student/testSeries/home"],
+      "matches": ["https://lpu.myperfectice.com/student/testSeries/home", "https://lpu.myperfectice.com/student/learning-test/*"],
       "css": ["./popup/popup.css"],
       "js": ["content.js"]
     }
