@@ -2,6 +2,10 @@
 
 This is a chrome extension to automate the process of taking tests on https://lpu.myperfectice.com/. It is a work in progress.
 
+## Youtube Video
+
+[![How to automate myperfectice test series using chrome extension](https://user-images.githubusercontent.com/61316762/208188718-30946bb9-08d3-4c9e-b017-9a95dab9c3e9.png)](https://youtu.be/gMq_H5oOA0c)
+
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/61316762/207877863-fbf8f8fb-1ede-45b7-8a61-7ce440fe7c1e.png)
