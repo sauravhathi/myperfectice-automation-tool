@@ -4,7 +4,7 @@ This is a chrome extension to automate the process of taking tests on https://lp
 
 ## Youtube Video
 
-[![How to automate myperfectice test series using chrome extension](https://user-images.githubusercontent.com/61316762/208188718-30946bb9-08d3-4c9e-b017-9a95dab9c3e9.png)](https://youtu.be/gMq_H5oOA0c)
+[![How to automate myperfectice test series using chrome extension](https://user-images.githubusercontent.com/61316762/208298118-7e7f0b04-b490-41e0-b01b-36ffc7616f12.png)](https://youtu.be/gMq_H5oOA0c)
 
 ## Screenshots
 
