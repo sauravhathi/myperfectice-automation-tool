@@ -27,9 +27,10 @@ This is a chrome extension to automate the process of taking tests on https://lp
 5. Select the folder where you cloned the repo
 6. Click on the extension icon
 7. Enter the test series name
-8. Click on 'Start'
-9. Wait for the opening of the test page
-10. Click on 'STQ' to start attempting questions
+8. Check the STQ checkbox if you want to attempt STQ questions
+9. Click on 'Start' to start the test
+10. Wait for the opening of the test page
+11. If you checked the STQ checkbox, then don't click on 'STQ' button. The extension will automatically attempt all test questions.
 
 `Note:` If you are getting an error, try reloading the page and then use the extension.
 

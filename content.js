@@ -2,7 +2,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.message === "start") {
         if (window.location.href.includes("testSeries/home")) {
             if (confirm("Start Automating?")) {
-                automate(request.data);
+                localStorage.setItem("stq", request.data.stq);
+                automate(request.data.test_series_title);
             } else {
                 alert("Your genius is not yet ready to be automated");
             }
@@ -53,7 +54,7 @@ async function innerResume() {
 
 function attemptTest() {
 
-    const inter = setInterval(() => {
+    const inter = setInterval(async () => {
         const count = document.querySelector('li.count').innerText;
         const current = count.split('/')[0].trim();
         const total = count.split('/')[1].trim();
@@ -68,7 +69,15 @@ function attemptTest() {
             clearInterval(inter);
             const finish = document.querySelector('div.finish-btn > a');
             finish.click();
-            window.location.assign("https://lpu.myperfectice.com/student/testSeries/home");
+            await sleep(1000);
+            document.querySelector('div.text-center.ng-star-inserted > a.btn.btn-primary.mt-2.mb-5').click();
+            await sleep(1000);
+            resumeTest();
+            innerResume();
         }
     }, 1000);
+}
+
+if (window.location.href.includes("/student/learning-test/") && localStorage.getItem("stq") === "true") {
+    attemptTest();
 }

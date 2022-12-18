@@ -39,6 +39,7 @@ body {
 
   .input_group{
     padding-right: 20px;
+    margin-bottom: 10px;
   }
 
   .btn-group{
@@ -52,12 +53,28 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
     margin-top: 5px;
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
       drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
     font-size: 0.8rem;
   }
+
+  .ex-d{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+
+  }
+
+  #stqTrue {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #4f46e5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
 
   #test_series:focus {
     outline: 1px solid #4f46e5;
