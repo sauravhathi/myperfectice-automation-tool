@@ -44,8 +44,6 @@ async function resumeTest() {
         resumeBtn.click();
     }
     else {
-        const dashboard = document.querySelector('li.nav-item.ng-star-inserted > a.nav-link.p-0');
-        dashboard.click();
         alert("Congratulations! You have completed test series");
     }
 }
@@ -54,8 +52,15 @@ async function innerResume() {
     await sleep(2000);
     const url = window.location.href;
     const id = url.split('id=')[1];
-    const testUrl = `https://lpu.myperfectice.com/student/learning-test/${id}`;
-    window.location.assign(testUrl);
+    // const testUrl = `https://lpu.myperfectice.com/student/learning-test/${id}`;
+    if(id === undefined) {
+        const dashboard = document.querySelector('li.nav-item.ng-star-inserted > a.nav-link.p-0');
+        dashboard.click();
+    }
+    else {
+        const testUrl = `https://lpu.myperfectice.com/student/learning-test/${id}`;
+        window.location.assign(testUrl);
+    }
 }
 
 function attemptTest() {
