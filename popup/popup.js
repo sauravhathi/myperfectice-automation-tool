@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function chTab(msg, { test_series_title, stq }) {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         let tab = tabs[0];
-        chrome.tabs.sendMessage(tab.id, { message: msg, data: { test_series_title, stq } });
+        chrome.tabs.sendMessage(tab.id, { message: msg, data: { test_series_title, stq } }, function (response) {
+            console.log(response);
+        });
     });
 }

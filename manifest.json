@@ -1,6 +1,7 @@
 {
   "name": "Myperfectice Automation Tool",
   "version": "1.0.0",
+  "homepage_url": "https://github.com/sauravhathi/myperfectice-automation-tool",
   "description": "Automate the process of taking tests on https://lpu.myperfectice.com/",
   "author": "Saurav Hathi",
   "manifest_version": 3,

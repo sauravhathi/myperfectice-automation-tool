@@ -4,13 +4,19 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             if (confirm("Start Automating?")) {
                 localStorage.setItem("stq", request.data.stq);
                 automate(request.data.test_series_title);
+                return true;
             } else {
                 alert("Your genius is not yet ready to be automated");
             }
         }
     }
     else if (request.message === "attemptTest") {
-        if(confirm("Start Attempting Questions?")) {
+
+        if (!window.location.href.includes("/student/learning-test/")) {
+            alert("Please go to test series page");
+            return;
+        }
+        if (confirm("Start Attempting Questions?")) {
             attemptTest();
         }
     }
@@ -53,7 +59,7 @@ async function innerResume() {
     const url = window.location.href;
     const id = url.split('id=')[1];
     // const testUrl = `https://lpu.myperfectice.com/student/learning-test/${id}`;
-    if(id === undefined) {
+    if (id === undefined) {
         const dashboard = document.querySelector('li.nav-item.ng-star-inserted > a.nav-link.p-0');
         dashboard.click();
     }
